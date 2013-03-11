@@ -1,6 +1,6 @@
 # Prolog puzzles for fun and profit (mostly fun)
 
-These are exercises I created back in 2007 while TAing "Introduction to Artificial Intelligence and Logic Programming" at the Institute of Cognitive Science in Osnabrück, Germany. I know that a lot of people still personally hate me for ruining their lives by this. 
+These are exercises I created back in 2007 while TAing "Introduction to Artificial Intelligence and Logic Programming" at the Institute of Cognitive Science in Osnabrück, Germany. I know that a lot of people still personally hate me for this. 
 
 If you never hacked in Prolog before, [learn it](http://www.learnprolognow.org)! It's fun and it makes you a Better Person™.
 
