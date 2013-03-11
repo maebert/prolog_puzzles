@@ -1,3 +1,8 @@
+%!bp -g "['matching.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
+
 % The Matching Problem
 
 % Prolog programming can be so romantic! In this exercise you will help five men and women to find their one and true loves - well, maybe.
@@ -21,7 +26,7 @@ femaleRanks([[3,4,1,5,2],
            [3,4,1,2,5],
            [5,2,4,3,1],
            [3,2,4,5,1]]).
-         
+
 males([arthur, bob, charles, dirk, ephraim]).
 females([anna, beatrix, claire, deborah, emily]).
 

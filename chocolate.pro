@@ -1,3 +1,8 @@
+%!bp -g "['chocolate.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
+
 % The chocolate problem
 
 % Ah, chocolate. The delicious blast of theobromine, caffeine, phenylethylamine and anandamide that will set off an uncanny firework in your brain has been used as treat, medicine and arguably aphrodisiac for more than three millennia since its first cultivation by Olmec and Maya cultures. My personal favourite is dark chocolate made from Caribbean Criollo beans with a hint of orange.

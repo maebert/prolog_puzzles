@@ -1,3 +1,7 @@
+%!bp -g "['robot.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
 % The Kidnapped Robot Problem
 
 % NOTE TO SELF:
@@ -11,7 +15,7 @@
 %    ##...#.
 %    ##..+#.
 %    #......
-%    ###.### 
+%    ###.###
 
 % Where + denotes the robot (and also the direction of the ultrasonic range finders), # denotes a wall and . empty space. The predicate would then unify Result with a list containing the measurements of the upper, right, lower and left range finder, respectively. So in this case:
 % ?- scan(State, Result).
@@ -30,7 +34,7 @@
 %     scan(State2, Results2),
 %     do_incredible_magic([Results0, Results1, Results2], X, Y).
 
-% Of course you will have to be a bit more precise with the last predicate. 
+% Of course you will have to be a bit more precise with the last predicate.
 % You can use random_state/1 for testing (so will we).
 % After you implemented everything, run evaluate/0 and note the results in your solution.
 
@@ -43,22 +47,22 @@
 
 % world(-List)
 % This is our world - w is a wall and o is empty space where our robot can move.
-world([ [w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w], 
-        [w,o,o,w,o,o,o,o,o,o,w,o,o,o,w,w,o,o,o,o,o,o,o,o,w,o,w,w,w,w,w,w], 
-        [w,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,w], 
-        [w,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,o,o,o,o,o,o,o,o,w], 
-        [w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,o,o,o,o,o,o,o,w], 
-        [w,w,w,o,o,o,o,o,w,w,w,w,w,w,w,w,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,w], 
-        [w,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,w,w,o,w], 
-        [w,o,w,w,w,w,o,o,o,o,o,o,o,o,w,w,w,w,w,o,o,o,o,o,w,w,w,w,o,o,o,w], 
-        [w,o,o,o,w,w,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,w], 
-        [w,o,o,w,w,w,w,o,o,o,o,o,o,o,o,o,w,w,o,o,w,w,w,w,o,o,o,o,o,o,o,w], 
-        [w,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,w,w,w,w,o,o,o,w,w,w,w,w,o,o,w], 
-        [w,o,o,o,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,w,w,w,o,w], 
-        [w,o,o,o,o,o,o,o,w,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,w], 
-        [w,o,o,o,o,w,w,w,o,o,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,o,w,w,w,w,w], 
-        [w,o,o,o,w,w,w,o,o,o,o,o,o,o,o,o,o,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w], 
-        [w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w] ]). 
+world([ [w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w],
+        [w,o,o,w,o,o,o,o,o,o,w,o,o,o,w,w,o,o,o,o,o,o,o,o,w,o,w,w,w,w,w,w],
+        [w,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,w],
+        [w,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,o,o,o,o,o,o,o,o,w],
+        [w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,o,o,o,o,o,o,o,w],
+        [w,w,w,o,o,o,o,o,w,w,w,w,w,w,w,w,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,w],
+        [w,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,w,w,w,w,w,o,w],
+        [w,o,w,w,w,w,o,o,o,o,o,o,o,o,w,w,w,w,w,o,o,o,o,o,w,w,w,w,o,o,o,w],
+        [w,o,o,o,w,w,o,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,w,o,o,o,o,o,o,o,o,w],
+        [w,o,o,w,w,w,w,o,o,o,o,o,o,o,o,o,w,w,o,o,w,w,w,w,o,o,o,o,o,o,o,w],
+        [w,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,w,w,w,w,o,o,o,w,w,w,w,w,o,o,w],
+        [w,o,o,o,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,w,w,w,w,o,w],
+        [w,o,o,o,o,o,o,o,w,w,w,w,w,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,w],
+        [w,o,o,o,o,w,w,w,o,o,o,o,o,o,o,w,w,w,w,o,o,o,o,o,o,o,o,w,w,w,w,w],
+        [w,o,o,o,w,w,w,o,o,o,o,o,o,o,o,o,o,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w],
+        [w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w] ]).
 
 % random_state(-State) -- DO NOT USE THIS PREDICATE IN YOUR SOLUTION!
 % Generates a random valid state using the world map
@@ -66,7 +70,7 @@ world([ [w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w],
 random_state([W, X, Y]) :-
     world(W),
     world_size(SX, SY),
-    repeat, 
+    repeat,
     X is random(SX),
     Y is random(SY),
     not(wall(W,X,Y)), !.
@@ -90,10 +94,10 @@ wall(World, X,Y) :-
     wall_tile(Tile),
     nth0(Y, World, Row),
     nth0(X, Row, Tile).
-    
+
 
 % scan(+State, ?Result)
-% Gives us the result of a scan as a list of four integers, representing 
+% Gives us the result of a scan as a list of four integers, representing
 % the proximities to the upper, right, lower and left wall, respectively.
 scan(State, [Up, Right, Down, Left]) :-
     scan_up(State, Up),
@@ -130,10 +134,10 @@ scan_left([World, X, Y], D) :-
 scan_up([World, X, Y], D) :-
     append(Upper, _, World),    % Split the world into two
     Y2 is Y + 1,                % Only consider upper half
-    length(Upper, Y2),          % 
+    length(Upper, Y2),          %
     reverse(Upper, UpperR),     % No philosophical connotation implied.
     wall(UpperR, X, D), !.      % Find our wall element at distance D.
-    
+
 
 % move_up(+OldState, -NewState)
 % Moves the robot one square up and returns the new state.
@@ -151,7 +155,7 @@ move_down([World, X, Y], [World, X, Y2]) :-
     world_size(_, SY),
     Y2 < SY,
     not(wall(World, X, Y2)).
- 
+
 % move_left(+OldState, -NewState)
 % Moves the robot one square left and returns the new state.
 % Will be false if the target square is a wall.

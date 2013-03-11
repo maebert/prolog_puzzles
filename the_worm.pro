@@ -1,4 +1,8 @@
+%!bp -g "['the_worm.pro']"
 %
+% @author       Manuel Ebert
+% @system       b-prolog
+
 % The Worm
 % -------------------
 % So there you are. Your academic career as a cognitive scientist took a wrong

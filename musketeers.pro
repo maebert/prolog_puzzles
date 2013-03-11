@@ -1,3 +1,8 @@
+%!bp -g "['musketeers.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
+
 % In one particular chapter of Dumas' novel three events happened simultaneously on spring evening in 1643:
 % Someone was cleaning his musket, another one met Constance Bonacieux and yet another one had a duel with Cardinal Richelieu. One of these events happened in the Hotel Treville, one in the Jardin du Luxembourg and one in Geroge Villier's estate.
 % If either Aramis or Athos was in the Jardin, then someone cleaned his musket in the hotel.

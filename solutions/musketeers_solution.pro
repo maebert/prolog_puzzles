@@ -1,4 +1,8 @@
-% Solution:
+%!bp -g "['musketeers_solution.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
+
 
 place(hotel).
 place(jardin).

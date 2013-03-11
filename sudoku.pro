@@ -1,3 +1,8 @@
+%!bp -g "['sudoku.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
+
 % Sudoku++
 
 % Alright, this is going to be the forty-third Sudoku solver you implement in your course of study. Wait, since we are at the Institute of Cognitive Science we can always make things a bit more complicated than necessary!

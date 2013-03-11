@@ -1,3 +1,7 @@
+%!bp -g "['translation_solution.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
 
 
 % Solution:

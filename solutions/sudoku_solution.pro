@@ -1,3 +1,7 @@
+%!bp -g "['sudoku_solution.pro']"
+%
+% @author       Manuel Ebert
+% @system       b-prolog
 
 test_case([
            [one,two,three,four,five,six],
