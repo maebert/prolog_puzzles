@@ -46,7 +46,7 @@ Write a prolog program that solves the following constraint satisfaction problem
 * __Solution:__ `solutions/sudoku_solution.prro`
 * __Supplementary materials:__ `solutions/sudokus_solution/`rocontains more problems like this.
 
-### translation.pl
+### Lost in Translation
 
 Nqblubh Mhboa. Nqrrroah Ukahama Nqblubh. Nqlhalha Ukahama Nqflua.
 
