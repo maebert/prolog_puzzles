@@ -9,7 +9,7 @@ If you never hacked in Prolog before, [learn it](http://www.learnprolognow.org)!
 Well, lucky you. Here is what you should do if you're awesome and want to live up to the excellent reputation you and your fellow students hold in the academic world:
 
 1. Star this repository. It's the Github way if saying "Thank you for ruining dozens of hours of my life that I will never get back!"
-2. Do your homework yourself and submit your own solution. Plagiarism is not cool.
+2. Do your homework yourself and submit your own solution. [Plagiarism](http://en.wikipedia.org/wiki/Karl-Theodor_zu_Guttenberg#Doctorate_plagiarism) [is](http://en.wikipedia.org/wiki/Silvana_Koch-Mehrin#Doctorate_plagiarism) [not](http://en.wikipedia.org/wiki/Annette_Schavan#Plagiarism_charge) [cool](http://en.wikipedia.org/wiki/VroniPlag_Wiki).
 3. After you're done, fork this repo, add your own improvements you the solutions and send me a pull request.
 
 ### I can't have enough of this!
