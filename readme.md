@@ -32,8 +32,8 @@ Check [P-99: Ninety-Nine Prolog Problems](https://sites.google.com/site/prologsi
 
 Implement a predicate who_did_what(Aramis, Athos, Pathos) that will instantiate each Person with a list containg his action and the place he happened to be at (e.g. Athos = [duel, jardin] etc.) according to the information given above.
 
-* __Excercise:__ `musketeers.pro`
-* __Solution:__ `solutions/musketeers_solution.pro`
+* __Excercise:__ [musketeers.pro](https://github.com/maebert/prolog_puzzles/blob/master/musketeers.pro)
+* __Solution:__ [solutions/musketeers_solution.pro](https://github.com/maebert/prolog_puzzles/blob/master/solutions/musketeers_solution.pro)
 
 
 ### Sudoku++
@@ -42,16 +42,16 @@ Implement a predicate who_did_what(Aramis, Athos, Pathos) that will instantiate 
 
 Write a prolog program that solves the following constraint satisfaction problem: write the words "one", "two", "three", "four", "five" and "six" into the boxes such that every word occurs only once per row, column and 2x3 grid. The number of letters of the words in the grids within a dotted box must be equal.
 
-* __Excercise:__ `sudoku.pro`
-* __Solution:__ `solutions/sudoku_solution.prro`
-* __Supplementary materials:__ `solutions/sudokus_solution/`rocontains more problems like this.
+* __Excercise:__ [sudoku.pro](https://github.com/maebert/prolog_puzzles/blob/master/sudoku.pro)
+* __Solution:__ [solutions/sudoku_solution.pro](https://github.com/maebert/prolog_puzzles/blob/master/solutions/sudoku_solution.pro)
+* __Supplementary materials:__ [solutions/sudokus/](https://github.com/maebert/prolog_puzzles/tree/master/solutions/sudokus) contains more problems like this.
 
 ### Lost in Translation
 
 Nqblubh Mhboa. Nqrrroah Ukahama Nqblubh. Nqlhalha Ukahama Nqflua.
 
-* __Excercise:__ `translation.pro`
-* __Solution:__ `solutions/translation_solution.pro`
+* __Excercise:__ [translation.pro](https://github.com/maebert/prolog_puzzles/blob/master/translation.pro)
+* __Solution:__ [solutions/translation_solution.pro](https://github.com/maebert/prolog_puzzles/blob/master/solutions/translation_solution.pro)
 
 ### The Worm
 
@@ -59,9 +59,9 @@ So there you are. Your academic career as a cognitive scientist took a wrong tur
 
 However, security is rather tight these days, and most machines use firewalls, traces and other measures to keep out people like you. Fortunately you were able to acquire a reduced topology of the internet. Your task is to implement a feasible heuristic for the route through the internet from your own machine, `asimov`, to your rivals box, `jillyates`, gaining access to higher security systems with every new infection.
 
-* __Excercise:__ `the_worm.pro`
-* __Solution:__ `solutions/the_worm_solution.pro`
-* __Supplementary materials:__ `supplementary/the_worm/` contains prolog code to generate internets. It also contains prolog code that generates matlab code that draws internets.
+* __Excercise:__ [the_worm.pro](https://github.com/maebert/prolog_puzzles/blob/master/the_worm.pro)
+* __Solution:__ [solutions/the_worm_solution.pro](solutions/https://github.com/maebert/prolog_puzzles/blob/master/the_worm_solution.pro)
+* __Supplementary materials:__ [supplementary/the_worm/](https://github.com/maebert/prolog_puzzles/tree/master/supplementary/the_worm) contains prolog code to generate internets. It also contains prolog code that generates matlab code that draws internets.
 
 ### The Matching Problem
 
@@ -69,7 +69,7 @@ Prolog programming can be so romantic! In this exercise you will help five men a
 
 In our case, we've got five males and five females. All of them assigned ranks to all members of the opposite sex and should get married according to those ranks. Now someone is said to be living in a stable marriage if there is no member of the opposite sex such that both would rather have each other than their current partners (and the same condition holds for that someone's partner).
 
-* __Excercise:__ `the_worm.pl`
+* __Excercise:__ [matching.pro](https://github.com/maebert/prolog_puzzles/blob/master/matching.pro)
 * __Solution:__ Left as an exercise to the reader.
 
 ### Chocolate
@@ -80,7 +80,7 @@ Ah, chocolate. The delicious blast of theobromine, caffeine, phenylethylamine an
 
 Anyway, here is your task: suppose you have a bar of your favourite chocolate which counts 5 x 9 pieces (so 45 in total) and want to share it with your three best friends (stupid enough). Now being a cognitive scientist you want to split the bar optimally with only three straight breaks between the square parts. And being more best friends with some than with others you want to give each of your friends a different amount of chocolate.
 
-* __Excercise:__ `chocolate.pl`
+* __Excercise:__ [chocolate.pro](https://github.com/maebert/prolog_puzzles/blob/master/chocolate.pro)
 * __Solution:__ Left as an exercise to the reader.
 
 
@@ -88,5 +88,5 @@ Anyway, here is your task: suppose you have a bar of your favourite chocolate wh
 
 You've just built a mobile robot, equipped it with four ultrasonic range finders to measure the distance to obstacles in the four principal directions and programmed it with a map of its environment. Now someone with questionable morale standards kidnapped your little robot and released it somewhere else on the map. Your robot wants to drive home, but to plan a route it must first localise itself on the map.
 
-* __Excercise:__ `robot.pl`
+* __Excercise:__ [robot.pro](https://github.com/maebert/prolog_puzzles/blob/master/robot.pro)
 * __Solution:__ Left as an exercise to the reader.
